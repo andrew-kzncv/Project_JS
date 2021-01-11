@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
-    <title>Project Kuznecov</title>
-</head>
-<body>
-    <div class="block">
-        <div>
-            <p>
-                Скоро здесь будет проект.
-            </p>
-            <img src="fyFm.gif" alt="nosignal">
-        </div>
-
-    </div>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <img class="rocket" onclick="move()" id="circle" src="img/rocket2.png" alt="rocket">
+      <div class="start">
+        <img class="button" onclick="countdown()" src="img/button.png" alt="button">
+        <div id="timer"></div>
+      </div>
+    </body>
 </html>
