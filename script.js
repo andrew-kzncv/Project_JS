@@ -38,9 +38,9 @@ function move () {
 };
 
 function changeImgRocket() {
-  document.getElementById("rocket_id").src="rocket2.png";
+  document.getElementById("rocket_id").src="img/rocket2.png";
 }
 
 function changeImgButton() {
-  document.getElementById("button_id").src="button2.png";
+  document.getElementById("button_id").src="img/button2.png";
 }
