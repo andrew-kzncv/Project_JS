@@ -3,6 +3,8 @@ let min = 0;
 
 function countdown() {
 	sec--;
+
+
 	if (sec == -01) {
     sec = 59; min = min - 1;
   } else {
@@ -11,26 +13,34 @@ function countdown() {
     sec="0" + sec;
   }
 
-	time = (min <= 9 ? "0" +min : min) + ":" + sec;
+	let time = (min <= 9 ? "0" +min : min) + ":" + sec;
 	if (document.getElementById) {
     timer.innerHTML = time;
   }
-	inter = setTimeout("countdown()", 1000);
+	const inter = setTimeout("countdown()", 1000);
 
 	if (min == '00' && sec == '00') {
-		sec = "00" ;
 		clearInterval(inter);
 
     timer.innerHTML="Start!";
+
     move();
+    changeImgRocket();
+
 	}
 };
 
-
-const move = () => {
-  document.addEventListener('mousemove', e => {
-    circle.style.left = e.pageX + "px";
-    circle.style.top = e.pageY + "px";
+function move () {
+  document.addEventListener('mousemove', mouseEvent => {
+    rocket_id.style.left = mouseEvent.pageX + "px";
+    rocket_id.style.top = mouseEvent.pageY + "px";
   });
+};
+
+function changeImgRocket() {
+  document.getElementById("rocket_id").src="rocket2.png";
 }
-;
+
+function changeImgButton() {
+  document.getElementById("button_id").src="button2.png";
+}

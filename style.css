@@ -1,17 +1,17 @@
+.rocket {
+  position: absolute;
+  width: 110px;
+  left: 47%;
+  top: 40%;
+  z-index: 1;
+}
 .start {
   position: absolute;
-  left: 50%;
   top: 70%;
+  left: 46%;
   text-align: center;
 }
 .button {
-  background-color: gray;
-  height: 100px;
-  width: 100px;
-}
-.rocket {
-  position: absolute;
-  width: 100px;
-  left: 50%;
-  top: 40%;
+  width: 150px;
+
 }
